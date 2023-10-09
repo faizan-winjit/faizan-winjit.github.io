@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Toonsutra Deep Link</title>
+
+    <!-- JavaScript script for redirection -->
+    <script>
+        window.onload = function() {
+            // Redirect to the deep link when the page loads
+            window.location.href = "toonsutra://test.com/details";
+        };
+    </script>
 </head>
 <body>
     <h1>Welcome to Toonsutra</h1>
     <p>This is a test page for deep linking to the Toonsutra app.</p>
 
-    <!-- Hidden iframe to trigger the deep link -->
-    <iframe src="toonsutra://test.com/details" style="display:none;"></iframe>
-
-    <!-- Provide a link to open the app (optional) -->
-    <a href="toonsutra://test.com/details">Open Toonsutra App</a>
-
     <!-- Fallback message for users without the app -->
-    <p>If you have the Toonsutra app installed, the link above will open it. Otherwise, please install the app to use this feature.</p>
-    <p> Edit 11: 25</p>
+    <p>If you have the Toonsutra app installed, clicking the link above will open it. Otherwise, please install the app to use this feature.</p>
 </body>
 </html>
